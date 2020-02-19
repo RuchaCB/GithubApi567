@@ -1,11 +1,11 @@
 import unittest
-from GitHubApi567 import u_commits, r_commits
+from GitHubApi567 import u_commits
 
 
 class TestGitHubApi567(unittest.TestCase):
     # define multiple sets of tests as functions with names that begin
 
-    def testRightTriangleA(self): 
+    def testu_commits(self): 
         total = 0
         l_1=[]
         for repo, num in u_commits('richkempinski'):
