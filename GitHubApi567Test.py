@@ -10,6 +10,7 @@ class TestGitHubApi567(unittest.TestCase):
         total = 0
         l_1=[]
         for repo, num in mock_u_com.return_value('richkempinski'):
+            print(repo, num)
             l_1.append("Repo: %s Number of commits: %d" % (repo, num))
             total += num 
         l_1.append("Done")
