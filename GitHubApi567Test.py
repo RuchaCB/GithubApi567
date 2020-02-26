@@ -18,8 +18,6 @@ class TestGitHubApi567(unittest.TestCase):
     @mock.patch('u_commits')
     def mock_u_commits(mock_u_com):
         print(mock_u_com)
-        
-    mock_u_commits()
 
 if __name__ == '__main__':
     print('Running unit tests')
