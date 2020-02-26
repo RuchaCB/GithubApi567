@@ -1,4 +1,5 @@
 import unittest
+from unittest import mock
 from GitHubApi567 import u_commits
 
 
@@ -13,7 +14,12 @@ class TestGitHubApi567(unittest.TestCase):
             total += num 
         l_1.append("Done")
         self.assertEqual(l_1,["Repo: helloworld Number of commits: 6", "Repo: Mocks Number of commits: 10","Repo: Project1 Number of commits: 2","Repo: threads-of-life Number of commits: 1","Done"])
-
+    
+    @mock.patch('u_commits')
+    def mock_u_commits(mock_u_com):
+        print(mock_u_com)
+        
+    mock_u_commits()
 
 if __name__ == '__main__':
     print('Running unit tests')
