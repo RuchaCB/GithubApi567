@@ -1,6 +1,6 @@
 import unittest
 from unittest import mock
-from GitHubApi567
+import GitHubApi567
 
 
 class TestGitHubApi567(unittest.TestCase):
